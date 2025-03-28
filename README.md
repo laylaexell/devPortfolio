@@ -5,7 +5,7 @@ Here I have got some coding work I have done. I developed a love for coding when
 
 The Copa 71 project stems from my love for women's football. I researched into this tournement and thought why not create a project from this, so I did! Using Figma software, to prototype micro interactions and develop a mini creative toolkit.
 
-The Copa 71 project is a basic mini project showcasing HTML and CSS skills, experimenting with responsive design & multiple webpages.  
-I would like to improve this project over time and slowly incorporate Javascript functions, with the help of React. 
+The Copa 71 project is a basic mini project showcasing my HTML and CSS skills, experimenting with responsive design & multiple webpages.  
 
+I would love to improve this project over time and slowly incorporate Javascript functions, with the help of React. 
 
