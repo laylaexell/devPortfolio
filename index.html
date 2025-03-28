@@ -1,127 +1,60 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Flexbox Pricing Table</title>
-    <link rel="stylesheet" href="https://use.typekit.net/tma2ivq.css">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+
+    /*red box*/
+
+    .flag{
+      width: 900px;
+      height: 600px;
+      background-color:#ce1126;
+      position: relative;
+    }
+
+    .flag > div{
+
+      width: 900px;
+      height: 300px;
+      background-color:#002868;
+      position: absolute;
+      top: 125px;
+
+
+    }
+
+    .flag > div > div {
+
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+      top: 50px;
+      left: 350px;
+
+
     
-    <style>
-      body {
-        font-family: "basic-sans", sans-serif;
-        font-weight: bold;
-        font-style: normal;
-
-
-      }
-
-
-
-      .pricing-container {
-
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-        border: solid black;
-        height: 100vh;
-        gap: 20px;
-        background-color: ivory
-        
-
-        
-       
-
-      
-        
-
-
-
-
-      }
-
-
-
-      .pricing-plan{
-
-      
-        background-color: ivory;
-        height: 250px;
-        width: 300px;
-        border: 5px solid darkred ;
-        padding: 20px;
-        
-
-
-        
-      
-      
-
-      }
-
-
-     .plan-title{
-
-      text-align: center;
-      color: green;
-      font-size: 20px;
-
-      
-
-      
-      
-     
-
-     }
-      
-
-     .plan-price{
-
-      text-align: center;
-
-
-      
-      
+  
+    }
     
-     }
-
-     .plan-features{
-
-      list-style-type: none;
-      text-align: center;
-      padding: 30px;
-
-
-      
-     }
-
-
-     .plan-button{
-
+    p{
+      margin: 0px;
       color: white;
-      background-color: darkred;
-      margin-left: 120px;
-
-      
-    
-      
-      
-    
+      font-size: 5rem;
+      text-align: center;
 
 
+    }
 
 
-     
-     }
+    .flag div div p{
 
-
-     
-
-     
-
-
-
-
-
-    
+      color: black;
+    }
 
 
 
@@ -129,66 +62,44 @@
 
 
 
-      /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 1250px) {
-        .pricing-container{
-          flex-direction: column;
-          height: 100%;
-        }
-      }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </style>
-  </head>
+   
 
-  <body>
-    <div class="pricing-container">
-      <div class="pricing-plan">
-        <div class="plan-title">Basic</div>
-        <div class="plan-price">$9.99/month</div>
-        <ul class="plan-features">
-          <li>✅ 10GB Storage</li>
-          <li>✅ 1 User</li>
-          <li>🚫 Support</li>
-        </ul>
-        <button class="plan-button">Sign Up</button>
-      </div>
-      <div class="pricing-plan">
-        <div class="plan-title">Standard</div>
-        <div class="plan-price">$19.99/month</div>
-        <ul class="plan-features">
-          <li>✅ 50GB Storage</li>
-          <li>✅ 5 Users</li>
-          <li>✅ Phone &amp; Email Support</li>
-        </ul>
-        <button class="plan-button">Sign Up</button>
-      </div>
-      <div class="pricing-plan">
-        <div class="plan-title">Premium</div>
-        <div class="plan-price">$49.99/month</div>
-        <ul class="plan-features">
-          <li>✅ 100GB Storage</li>
-          <li>✅ 10 Users</li>
-          <li>✅ 24/7 Support</li>
-        </ul>
-        <button class="plan-button">Sign Up</button>
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
