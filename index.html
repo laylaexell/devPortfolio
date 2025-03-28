@@ -1,69 +1,194 @@
-<!-- 
-  TODO: Create a motivational post website.
-Style it how ever you like. 
-Look at the goal image for inspiration.
-But it must have the following features:
-1. The main h1 text should be using the Regular Libre Baskerville Font from Google Fonts:
-  https://fonts.google.com/specimen/Libre+Baskerville
-2. The text should be white and background black.
-3. Add your own image into the images folder inside assets. It should have a 5px white border.
-4. The text should be center aligned.
-5. Create a div to contain the h1, p and img elements. Adjust the margins so that the image and text are centered on the page. 
-  Hint: You horizontally center a div by giving it a width of 50% and a margin-left of 25%.
-  Hint: Set the image to have a width of 100% so it fills the div. 
-6. Read about the text-transform property on MDN docs to make the h1 uppercase with CSS.
-  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
--->
-
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
   <head>
-    <title>Motivational Meme Project</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
+    <title>Flexbox Pricing Table</title>
+    <link rel="stylesheet" href="https://use.typekit.net/tma2ivq.css">
+    
+    <style>
+      body {
+        font-family: "basic-sans", sans-serif;
+        font-weight: bold;
+        font-style: normal;
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+      }
 
 
+
+      .pricing-container {
+
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        border: solid black;
+        height: 100vh;
+        gap: 20px;
+        background-color: ivory
+        
+
+        
+       
+
+      
+        
+
+
+
+
+      }
+
+
+
+      .pricing-plan{
+
+      
+        background-color: ivory;
+        height: 250px;
+        width: 300px;
+        border: 5px solid darkred ;
+        padding: 20px;
+        
+
+
+        
+      
+      
+
+      }
+
+
+     .plan-title{
+
+      text-align: center;
+      color: green;
+      font-size: 20px;
+
+      
+
+      
+      
+     
+
+     }
+      
+
+     .plan-price{
+
+      text-align: center;
+
+
+      
+      
+    
+     }
+
+     .plan-features{
+
+      list-style-type: none;
+      text-align: center;
+      padding: 30px;
+
+
+      
+     }
+
+
+     .plan-button{
+
+      color: white;
+      background-color: darkred;
+      margin-left: 120px;
+
+      
+    
+      
+      
+    
+
+
+
+
+     
+     }
+
+
+     
+
+     
+
+
+
+
+
+    
+
+
+
+
+
+
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+        .pricing-container{
+          flex-direction: column;
+          height: 100%;
+        }
+      }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
   </head>
+
   <body>
-
-    <div class="motivationalmemeposter">
-    <h1>The Moment</h1>
-    <img class="babycry-img" src="./assets/images/babycry.jpeg" alt="baby crying">
-    <p>when it hits 9pm and you're about to face a 10 hour shift.</p>
-  </div>
-
-</body>
-
-
-
-
-
-
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
